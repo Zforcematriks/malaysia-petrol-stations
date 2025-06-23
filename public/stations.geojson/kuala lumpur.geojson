@@ -1,0 +1,252 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-06-18T17:19:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1545809235",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "brand:wikipedia": "en:Shell plc",
+        "name": "Shell"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.6723178,
+          3.1347972
+        ]
+      },
+      "id": "node/1545809235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1550055487",
+        "addr:street": "Jalan Maarof",
+        "amenity": "fuel",
+        "brand": "BHPetrol",
+        "brand:wikidata": "Q62274381",
+        "fuel:e5": "yes",
+        "name": "BHPetrol",
+        "operator": "BHPetrol Jalan Maarof"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.6723071,
+          3.1337929
+        ]
+      },
+      "id": "node/1550055487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1704469617",
+        "amenity": "fuel",
+        "brand": "Petronas",
+        "brand:wikidata": "Q221692",
+        "brand:wikipedia": "en:Petronas",
+        "name": "Petronas Jinjang",
+        "name:en": "Petronas Jinjang",
+        "name:ms": "Petronas Jinjang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.6572166,
+          3.2098767
+        ]
+      },
+      "id": "node/1704469617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2329490023",
+        "amenity": "fuel",
+        "brand": "Petron",
+        "brand:wikidata": "Q7179011",
+        "brand:wikipedia": "en:Petron Corporation",
+        "name": "Petron"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.717192,
+          3.1348246
+        ]
+      },
+      "id": "node/2329490023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2910852860",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "brand:wikipedia": "en:Shell plc",
+        "name": "Shell",
+        "operator": "Shell"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.710768,
+          3.1257106
+        ]
+      },
+      "id": "node/2910852860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3664997146",
+        "addr:housenumber": "K9",
+        "addr:postcode": "51200",
+        "addr:street": "Jalan Ipoh",
+        "amenity": "fuel",
+        "branch": "Jalan Ipoh",
+        "brand": "Caltex",
+        "brand:wikidata": "Q277470",
+        "brand:wikipedia": "en:Caltex",
+        "fuel:diesel": "yes",
+        "fuel:gasoline": "yes",
+        "fuel:octane_95": "yes",
+        "name": "Caltex Jalan Ipoh",
+        "name:en": "Caltex Jalan Ipoh",
+        "name:ms": "Caltex Jalan Ipoh",
+        "name:zh": "加德士加油站怡保路四英里分行",
+        "name:zh-Hans": "加德士加油站怡保路四英里分行",
+        "name:zh-Hant": "加德士加油站怡保路四英里分行",
+        "opening_hours": "24/7",
+        "operator": "Caltex",
+        "payment:cash": "yes",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "self_service": "yes",
+        "source": "Land survey",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.6794248,
+          3.1975944
+        ]
+      },
+      "id": "node/3664997146"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4706828888",
+        "addr:city": "Kuala Lumpur",
+        "addr:place": "OUG",
+        "amenity": "fuel",
+        "brand": "Petronas",
+        "brand:wikidata": "Q221692",
+        "brand:wikipedia": "en:Petronas",
+        "fuel:lpg": "yes",
+        "name": "Guan Bee Gas Petronas",
+        "name:en": "Guan Bee Gas Petronas"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.6701902,
+          3.0819178
+        ]
+      },
+      "id": "node/4706828888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6510317685",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "brand:wikipedia": "en:Shell plc",
+        "compressed_air": "yes",
+        "fuel:diesel": "yes",
+        "fuel:octane_95": "yes",
+        "fuel:octane_98": "yes",
+        "name": "Shell",
+        "self_service": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.7333651,
+          3.1004131
+        ]
+      },
+      "id": "node/6510317685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6535537946",
+        "amenity": "fuel",
+        "brand": "Shell",
+        "brand:wikidata": "Q110716465",
+        "name": "Shell"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.7085499,
+          3.0739504
+        ]
+      },
+      "id": "node/6535537946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11358396180",
+        "amenity": "fuel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.7141947,
+          3.2128728
+        ]
+      },
+      "id": "node/11358396180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12118558790",
+        "addr:street": "Jalan Maharajalela",
+        "amenity": "fuel",
+        "brand": "BHPetrol",
+        "brand:wikidata": "Q62274381",
+        "name": "BHPetrol",
+        "name:en": "BHPetrol",
+        "name:ms": "BHPetrol",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.7025031,
+          3.1372846
+        ]
+      },
+      "id": "node/12118558790"
+    }
+  ]
+}
