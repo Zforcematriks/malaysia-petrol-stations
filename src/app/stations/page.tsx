@@ -53,13 +53,19 @@ export default function StationsPage() {
   const brandFilter = searchParams.get('brand');
 
   useEffect(() => {
-    setLoading(true);
-    fetch('/stations.json')
-      .then(res => res.json())
-      .then((data) => {
-        setAllStations(data);
-        setLoading(false);
-      });
+    if (typeof window !== 'undefined') {
+      setLoading(true);
+      fetch('/stations.json')
+        .then(res => res.json())
+        .then((data) => {
+          setAllStations(data);
+          setLoading(false);
+        })
+        .catch(() => {
+          setAllStations([]);
+          setLoading(false);
+        });
+    }
   }, []);
 
   useEffect(() => {
