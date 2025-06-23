@@ -1,5 +1,6 @@
 'use client';
 export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 import Image from "next/image";
 import React, { useState, useEffect, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
