@@ -36,7 +36,6 @@ export const viewport = {
   userScalable: "no",
 };
 
-export const themeColor = "#3B82F6";
 
 export default function RootLayout({
   children,
