@@ -19,8 +19,6 @@ const exo = Exo({
 export const metadata: Metadata = {
   title: "Malaysia Petrol Stations",
   description: "Find petrol stations near you in Malaysia",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
-  themeColor: "#3B82F6",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -30,6 +28,15 @@ export const metadata: Metadata = {
     telephone: false,
   },
 };
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: "no",
+};
+
+export const themeColor = "#3B82F6";
 
 export default function RootLayout({
   children,
