@@ -1,6 +1,6 @@
 'use client';
 import React from "react";
-import { FaGasPump, FaMapMarkerAlt, FaOilCan, FaCode } from "react-icons/fa";
+import { FaGasPump, FaMapMarkerAlt, FaOilCan } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -8,7 +8,6 @@ const navItems = [
   { label: "Brand", icon: <FaGasPump />, href: "/brand" },
   { label: "Stations", icon: <FaMapMarkerAlt />, href: "/stations" },
   { label: "Prices", icon: <FaOilCan />, href: "/prices" },
-  { label: "API", icon: <FaCode />, href: "/api/docs" },
 ];
 
 export default function BottomNav() {
