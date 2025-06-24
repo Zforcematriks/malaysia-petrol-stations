@@ -2,7 +2,7 @@
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
 import Image from "next/image";
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import BottomNav from "../../components/BottomNav";
 import StationDetailsModal from "../../components/StationDetailsModal";
@@ -41,7 +41,7 @@ function getFullStationName(station: any) {
     : station.name;
 }
 
-export default function StationsPage() {
+function StationsContent() {
   const [allStations, setAllStations] = useState<any[]>([]);
   const [displayedStations, setDisplayedStations] = useState<any[]>([]);
   const [searchArea, setSearchArea] = useState("");
@@ -118,7 +118,7 @@ export default function StationsPage() {
   }, [filteredAndSortedStations, loadedCount]);
 
   const handleLoadMore = () => {
-    setLoadedCount(prev => prev + PAGE_SIZE);
+    setLoadedCount((prev: number) => prev + PAGE_SIZE);
   };
   
   const handleSearch = () => {};
@@ -138,8 +138,8 @@ export default function StationsPage() {
             type="text"
             placeholder="Please enter area"
             value={searchArea}
-            onChange={(e) => setSearchArea(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchArea(e.target.value)}
+            onKeyPress={(e: React.KeyboardEvent<HTMLInputElement>) => e.key === 'Enter' && handleSearch()}
             className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
             style={{ fontFamily: 'var(--font-exo)' }}
           />
@@ -157,7 +157,7 @@ export default function StationsPage() {
       ) : (
         <>
           <div className="grid grid-cols-1 gap-4">
-            {displayedStations.map((station, idx) => (
+            {displayedStations.map((station: any, idx: number) => (
               <div
                 key={station.place_id || station.name + idx}
                 className="bg-white rounded-lg shadow-md p-4 border border-gray-200 hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer"
@@ -171,7 +171,7 @@ export default function StationsPage() {
                       width={60} 
                       height={60} 
                       className="rounded-lg"
-                      onError={(e) => { e.currentTarget.src = '/brands/default.png'; }}
+                      onError={(e: React.SyntheticEvent<HTMLImageElement>) => { e.currentTarget.src = '/brands/default.png'; }}
                     />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -238,5 +238,13 @@ export default function StationsPage() {
         onClose={() => setSelectedStation(null)} 
       />
     </div>
+  );
+}
+
+export default function StationsPage() {
+  return (
+    <Suspense fallback={<div className="text-center py-8 text-gray-400">Loading...</div>}>
+      <StationsContent />
+    </Suspense>
   );
 } 
